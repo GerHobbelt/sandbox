@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "async": "^2.1.4",
@@ -26,6 +28,8 @@
     "serve-favicon": "^2.3.2",
     "socket.io": "^1.7.2",
     "socket.io-client": "^1.7.2",
-    "winston": "^2.3.0"
-  }
+    "winston": "^2.3.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
